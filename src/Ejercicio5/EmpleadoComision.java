@@ -1,6 +1,7 @@
 package Ejercicio5;
 
 public class EmpleadoComision extends Empleado {
+//Atributos
     double ventasRealizadas;
     double porcentajeComision;
 //Contructor con parametros

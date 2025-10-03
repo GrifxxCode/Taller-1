@@ -1,6 +1,7 @@
 package Ejercicio4;
 
 public class Rectangulo extends Figura {
+//Atributos de rectangulo
     double base;
     double altura;
 //Constructor de la clase rectangulo

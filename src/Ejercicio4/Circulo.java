@@ -1,6 +1,7 @@
 package Ejercicio4;
 
 public class Circulo extends Figura {
+//Atributos de circulo
     double radio;
 //Constructor de la clase circulo
     public Circulo(double radio) {

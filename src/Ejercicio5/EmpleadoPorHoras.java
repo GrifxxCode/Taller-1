@@ -1,6 +1,7 @@
 package Ejercicio5;
 
 public class EmpleadoPorHoras extends Empleado {
+//Atributos
     double horasTrabajadas;
     double valorHora;
 //Constructor con parametros

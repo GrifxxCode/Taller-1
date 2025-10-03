@@ -1,6 +1,7 @@
 package Ejercicio5;
 
 public class Empleado {
+//Atributos
     String nombre;
     String identificacion;
     double salarioBase;

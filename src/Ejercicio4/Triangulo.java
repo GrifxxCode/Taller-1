@@ -1,6 +1,7 @@
 package Ejercicio4;
 
 public class Triangulo extends Figura {
+//Atributos de triangulo
     double base;
     double altura;
     double lado1;

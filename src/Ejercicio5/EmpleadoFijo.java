@@ -1,6 +1,7 @@
 package Ejercicio5;
 
 public class EmpleadoFijo extends Empleado {
+//Atributos
     double bonificacion;
 //Constructor con parametros
     public EmpleadoFijo(String nombre, String identificacion, double salarioBase, double bonificacion) {
