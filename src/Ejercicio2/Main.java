@@ -7,6 +7,6 @@ public class Main {
             cuenta.depositar(100000);
             cuenta.retirar(100);
             cuenta.transferir(cuenta2, 100);
-            cuenta.consultarSaldo();
+            System.out.println("Su saldo actual es: " + cuenta.consultarSaldo());
     }
 }

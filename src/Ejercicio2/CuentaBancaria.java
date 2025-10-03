@@ -32,8 +32,8 @@ public class CuentaBancaria {
         }
     }
 
-    public void consultarSaldo () {
-        System.out.println("Su saldo actual es: " + saldo);
+    public double consultarSaldo () {
+       return saldo;
     }
 
     public void transferir (CuentaBancaria destino, double monto) {
