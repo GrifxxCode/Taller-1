@@ -8,5 +8,7 @@ public class Main {
 
         biblioteca.agregarLibro(libros2);
         biblioteca.listarLibrosDisponibles();
+        biblioteca.prestarLibro("978-26271");
+        biblioteca.devolverLibro("523-188292");
     }
 }

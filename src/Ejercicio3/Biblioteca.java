@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class Biblioteca {
     String nombre;
     ArrayList<Libro> libros;
-//Constructor de la biblioteca
+    //Constructor de la biblioteca
     public Biblioteca(String nombre) {
         this.nombre = nombre;
         this.libros = new ArrayList<>();
     }
-//Metodos Agregar, prestar, devolver, buscar y listar
+    //Metodos Agregar, prestar, devolver, buscar y listar
     public void agregarLibro(Libro libro) {
         libros.add(libro);
         System.out.println("Libro agregado: " + libro.titulo);
