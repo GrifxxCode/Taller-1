@@ -18,36 +18,32 @@ public class Estudiante {
             return nombre;
         }
 
-        public String setNombre (String nombre) {
+        public void setNombre (String nombre) {
             this.nombre = nombre;
-            return nombre;
         }
 
         public int getEdad () {
             return edad;
         }
 
-        public int setEdad (int edad) {
+        public void setEdad (int edad) {
             this.edad = edad;
-            return edad;
         }
 
         public String getCarrera () {
             return carrera;
         }
 
-        public String setCarrera (String carrera) {
+        public void setCarrera (String carrera) {
             this.carrera = carrera;
-            return carrera;
         }
 
         public double getPromedio () {
             return promedio;
         }
 
-        public double setPromedio (double promedio) {
+        public void setPromedio (double promedio) {
             this.promedio = promedio;
-            return promedio;
         }
     //Metodos
         public void mostrarInformacion () {
