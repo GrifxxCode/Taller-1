@@ -19,17 +19,17 @@ public class Biblioteca {
 
     public void prestarLibro(String isbn) {
         for (Libro libro : libros) {
-            if (libro.isbn.equals(isbn)) {
+            if (libro.isbn.equalsIgnoreCase(isbn)) {
                 if (libro.disponible) {
                     libro.disponible = false;
-                    System.out.println("Prestado: " + libro.titulo);
+                    System.out.println("Prestado: " + libro.isbn);
                 } else {
-                    System.out.println("Ya estaba prestado");
+                    System.out.println("Ya estaba prestado: " + libro.titulo);
                 }
                 return;
             }
-            System.out.println("No se encontro el libro");
         }
+        System.out.println("No se encontro el libro");
     }
 
     public void devolverLibro(String isbn) {
@@ -45,13 +45,18 @@ public class Biblioteca {
         }
     }
 
-    public Libro buscarLibro(String titulo) {
+    public void buscarLibro(String titulo) {
         for (Libro libro : libros) {
             if (libro.titulo.equalsIgnoreCase(titulo)) {
-                return libro;
+                if (libro.disponible) {
+                    System.out.println("Libro encontrado: " + libro.titulo);
+                }else {
+                    System.out.println("Libro ya esta prestado");
+                }
+                return;
             }
         }
-        return null;
+        System.out.println("No se encontro el libro");
     }
 
     public void listarLibrosDisponibles() {
